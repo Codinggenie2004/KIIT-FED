@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FED KIIT</title>
+    <style>
+      body {
+        font-family: 'Arial', sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #000;
+        background-image: url(copy-space-blue-circuits-digital-background_23-2148821699.jpg);
+        color: #fff;
+      }
+      .navbar {
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem;
+      }
+      .hero {
+        text-align: center;
+        margin-top: -200px;
+
+        padding: 2rem;
+      }
+      .hero h1 {
+        font-size: 2.5rem;
+        margin-bottom: 0.5rem;
+      }
+      .hero p {
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+      }
+      .hero button {
+        padding: 1rem 2rem;
+        background-color: #972f2f;
+        border: none;
+        color: rgb(247, 241, 241);
+        font-size: 1rem;
+        cursor: pointer;
+      }
+      .footer {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 1rem;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+      }
+      a:link {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:visited {
+  color: pink;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
+/* Modal styles */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0,0.4);
+  backdrop-filter: blur(8px);
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe38;
+  margin: 10% auto;
+  padding: 20px;
+  border: 1px solid #88888833;
+  width: 30%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+.carousel {
+  position: relative;
+  max-width: 300px; /* Set the maximum width of the carousel */
+  margin: left;
+  overflow: hidden;
+}
+
+.carousel-images img {
+  width: 100%;
+  display: none; /* Hide all images by default */
+}
+
+.carousel-images img.active {
+  display: block; /* Only show the active image */
+}
+
+.carousel-button {
+  position: absolute;
+  top: 20%;
+  transform: translateY(-2%);
+  background-color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+</style>
+    </head>
+    <body>
+    <div class="navbar">
+      <img src="FedLogo.png" alt="FED Logo">
+      <div>
+        <a href="#">Home</a>
+        <button id="signInBtn">Sign In</button>
+      </div>
+    </div>
+    <div class="carousel">                                                                           
+      <div class="carousel-images">
+        <img src="ales-nesetril-Im7lZjxeLhg-unsplash (Custom) (Custom) (Custom).jpg" alt="First Image" class="active">                  
+        <img src="luca-bravo-XJXWbfSo2f0-unsplash.jpg" alt="Second Image">
+        <img src="nasa-Q1p7bh3SHj8-unsplash.jpg" alt="Third Image">
+        
+      </div>
+      <button class="carousel-button prev" onclick="moveSlide(-1)"><-</button>
+      <button class="carousel-button next" onclick="moveSlide(1)">-></button>
+    </div>
+    <div class="hero">
+      <h1>Let's Connect</h1>
+      <p>Illuminating the in you.</p>
+      <button>ENROLL</button>
+      <h2>Dive In</h2>
+      <p>to the endless possibilities.</p>
+    </div>
+    <div id="signInModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Welcome Back</h2>
+        <input type="text" placeholder="Enter Username" required>
+        <input type="password" placeholder="Enter Password" required>
+        <p>
+        <button id="signInSubmit">Sign In</button>
+        <button id="forgotPassword">Forgot Password?</button></p>
+        <div class="social-login">
+          <h3>------ Or Continue With ------</h3>
+          <button id="googleSignIn"><img src="images.png" width="40" height="40"></button>
+          <button id="facebookSignIn"><img src="Facebook_Logo_2023.png" width="35" height="40"></button>
+        </div>
+        
+      <p>Don't have an account?</p> <button id="createAccount">Create Account!</button>
+      </div>
+    </div>
+    
+    <div class="footer">
+      <p>FED</p>
+      <div>
+        <a href="#">About</a>
+        <a href="#">Service</a>
+        <a href="#">Contact Us</a>
+      </div>
+      <p>Copyright @Saket Suman</p>
+    </div>
+    <script src="app.js"></script>
+
+    </body>
+    </html>
+    
