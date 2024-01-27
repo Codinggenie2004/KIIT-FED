@@ -1,2 +1,2 @@
 # KIIT-FED
-Just save it on your pc along with the app.js in a single folder and it will run without anyissues
+Just save all the files on your pc along with the in a single folder and it will run without any issues.
